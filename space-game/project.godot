@@ -14,6 +14,10 @@ config/name="Space Game"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[dotnet]
+
+project/assembly_name="Space Game"
+
 [rendering]
 
 renderer/rendering_method="gl_compatibility"
