@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bum2vtv5daey5"]
+
+[ext_resource type="Texture2D" uid="uid://dhvn83wnkmyx6" path="res://Background/Space_Background.png" id="1_b72jg"]
+[ext_resource type="PackedScene" uid="uid://ce8gcsp36qigb" path="res://Sences/SpaceShip.tscn" id="2_k7pem"]
+
+[node name="Main" type="Node2D"]
+
+[node name="SpaceBackground" type="Sprite2D" parent="."]
+position = Vector2(11, 7.99999)
+scale = Vector2(2.40994, 1.96702)
+texture = ExtResource("1_b72jg")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(0.5, 0.5)
+
+[node name="Space_Ship" parent="." instance=ExtResource("2_k7pem")]
+position = Vector2(0, 450)
+scale = Vector2(5, 5)

@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://ce8gcsp36qigb"]
+
+[ext_resource type="Texture2D" uid="uid://dnialck2o63ne" path="res://Sprites/tinyShip19.png" id="1_77obd"]
+
+[node name="Space_Ship" type="Sprite2D"]
+texture = ExtResource("1_77obd")
+region_enabled = true
+region_rect = Rect2(43, 28, 42, 28)

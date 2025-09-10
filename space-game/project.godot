@@ -11,9 +11,7 @@ config_version=5
 [application]
 
 config/name="Space Game"
-run/main_scene="uid://d1c2q0iiwaw6b"
 config/features=PackedStringArray("4.4", "GL Compatibility")
-config/icon="res://icon.svg"
 
 [dotnet]
 
