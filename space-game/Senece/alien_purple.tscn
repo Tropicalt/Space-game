@@ -1,9 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://bwgna8j08w3l4"]
-
-[ext_resource type="Texture2D" uid="uid://dqru3t2iu3d7v" path="res://Sprites/Alien - blue.png" id="1_voaqj"]
-
-[node name="Node2D" type="Node2D"]
-
-[node name="Alien-Blue" type="Sprite2D" parent="."]
-position = Vector2(-6, -69)
-texture = ExtResource("1_voaqj")
