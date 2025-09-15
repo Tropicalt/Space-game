@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cnuv7t5nsj5ml"]
+
+[ext_resource type="Texture2D" uid="uid://dnialck2o63ne" path="res://Sprites/tinyShip19.png" id="1_cjnfv"]
+[ext_resource type="Script" uid="uid://c10ex502njx0" path="res://Scripts/SpaceShip.cs" id="2_yw7m7"]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("2_yw7m7")
+
+[node name="Space_Ship" type="Sprite2D" parent="."]
+texture = ExtResource("1_cjnfv")
+region_enabled = true
+region_rect = Rect2(43, 28, 42, 28)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(-0.557995, 0)
+scale = Vector2(1.01599, 1)
+polygon = PackedVector2Array(-21, 8, 0, 14, 22, 9, 22, 1, 13, -14, -14, -14, -21, 1)
