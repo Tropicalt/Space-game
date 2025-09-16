@@ -1,13 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://brximaih0jpaw"]
+[gd_scene load_steps=4 format=3 uid="uid://brximaih0jpaw"]
 
 [ext_resource type="Texture2D" uid="uid://cy4x1pm0wgkhv" path="res://Background/New_Space_Background.png" id="1_jjgbg"]
 [ext_resource type="PackedScene" uid="uid://cnuv7t5nsj5ml" path="res://Scenes/SpaceShip.tscn" id="2_bo1nx"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bo1nx"]
+size = Vector2(20, 1306)
+
 [node name="Main" type="Node2D"]
 
 [node name="NewSpaceBackground" type="Sprite2D" parent="."]
-position = Vector2(-0.500042, 3.88622e-05)
-scale = Vector2(3.62031, 2.04063)
+position = Vector2(-0.499565, 0.000875235)
+scale = Vector2(3.61406, 2.03438)
 texture = ExtResource("1_jjgbg")
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -16,3 +19,16 @@ zoom = Vector2(0.5, 0.5)
 [node name="Space_Ship" parent="." instance=ExtResource("2_bo1nx")]
 position = Vector2(-0.499991, 440.5)
 scale = Vector2(5.5, 5.03571)
+
+[node name="Area2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(1166, 2)
+shape = SubResource("RectangleShape2D_bo1nx")
+
+[node name="Area2D" type="StaticBody2D" parent="Area2D"]
+position = Vector2(32, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D/Area2D"]
+position = Vector2(-1197, 0)
+shape = SubResource("RectangleShape2D_bo1nx")
