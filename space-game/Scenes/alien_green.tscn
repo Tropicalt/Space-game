@@ -1,6 +1,23 @@
-[gd_scene load_steps=2 format=3 uid="uid://cnli0afrmg4hv"]
+[gd_scene load_steps=4 format=3 uid="uid://cnli0afrmg4hv"]
 
 [ext_resource type="Texture2D" uid="uid://7wn3hutq02hd" path="res://Sprites/Alien - green.png" id="1_du0ea"]
+[ext_resource type="Texture2D" uid="uid://cqom6u74ws4if" path="res://Sprites/Alien_update - green.png" id="2_eqmd1"]
 
-[node name="Alien-Green" type="Sprite2D"]
-texture = ExtResource("1_du0ea")
+[sub_resource type="SpriteFrames" id="SpriteFrames_k6sbs"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_du0ea")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_eqmd1")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
+
+[node name="Alien-Green" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_k6sbs")
+autoplay = "default"
+frame_progress = 0.0524407

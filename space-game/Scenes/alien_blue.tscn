@@ -1,6 +1,23 @@
-[gd_scene load_steps=2 format=3 uid="uid://cf4ndjkm220xa"]
+[gd_scene load_steps=4 format=3 uid="uid://cf4ndjkm220xa"]
 
 [ext_resource type="Texture2D" uid="uid://dqru3t2iu3d7v" path="res://Sprites/Alien - blue.png" id="1_oiexf"]
+[ext_resource type="Texture2D" uid="uid://6cv5rxyeolnc" path="res://Sprites/Alien - blue_update.png" id="2_5aror"]
 
-[node name="Alien_Blue" type="Sprite2D"]
-texture = ExtResource("1_oiexf")
+[sub_resource type="SpriteFrames" id="SpriteFrames_oiexf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_oiexf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_5aror")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
+
+[node name="Alien_Blue" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_oiexf")
+autoplay = "default"
+frame_progress = 0.294484
