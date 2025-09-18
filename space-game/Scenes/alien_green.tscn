@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://7wn3hutq02hd" path="res://Sprites/Alien - green.png" id="1_du0ea"]
 [ext_resource type="Texture2D" uid="uid://cqom6u74ws4if" path="res://Sprites/Alien_update - green.png" id="2_eqmd1"]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_k6sbs"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_eqmd1"]
 animations = [{
 "frames": [{
 "duration": 1.0,
@@ -18,6 +18,5 @@ animations = [{
 }]
 
 [node name="Alien-Green" type="AnimatedSprite2D"]
-sprite_frames = SubResource("SpriteFrames_k6sbs")
+sprite_frames = SubResource("SpriteFrames_eqmd1")
 autoplay = "default"
-frame_progress = 0.0524407
