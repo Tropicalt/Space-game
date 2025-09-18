@@ -1,6 +1,23 @@
-[gd_scene load_steps=2 format=3 uid="uid://dnwry5fggau0y"]
+[gd_scene load_steps=4 format=3 uid="uid://dnwry5fggau0y"]
 
 [ext_resource type="Texture2D" uid="uid://cpmuqem1t86wk" path="res://Sprites/Alien - yellow.png" id="1_3qody"]
+[ext_resource type="Texture2D" uid="uid://bbv1x23oda3mp" path="res://Sprites/Alien_2 - yellow.png" id="2_cr6rl"]
 
-[node name="Alien-Yellow" type="Sprite2D"]
-texture = ExtResource("1_3qody")
+[sub_resource type="SpriteFrames" id="SpriteFrames_6l05u"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_3qody")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_cr6rl")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
+
+[node name="Alien-Yellow" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_6l05u")
+autoplay = "default"
+frame_progress = 0.0238584
