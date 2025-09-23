@@ -1,10 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://brximaih0jpaw"]
+[gd_scene load_steps=11 format=3 uid="uid://brximaih0jpaw"]
 
 [ext_resource type="Texture2D" uid="uid://cy4x1pm0wgkhv" path="res://Background/New_Space_Background.png" id="1_jjgbg"]
 [ext_resource type="PackedScene" uid="uid://cnuv7t5nsj5ml" path="res://Scenes/SpaceShip.tscn" id="2_bo1nx"]
 [ext_resource type="PackedScene" uid="uid://cf4ndjkm220xa" path="res://Scenes/alien_blue.tscn" id="3_8gbba"]
 [ext_resource type="AudioStream" uid="uid://do6rjxrqairyw" path="res://Music/slow-travel.wav" id="4_jjvhh"]
 [ext_resource type="Script" uid="uid://cexew8jsciyxv" path="res://Scripts/PathFollow2d.cs" id="4_kry3j"]
+[ext_resource type="PackedScene" uid="uid://dcn5bqdyonir3" path="res://Scenes/killzone.tscn" id="6_21xkr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bo1nx"]
 size = Vector2(20, 1300)
@@ -14,9 +15,12 @@ size = Vector2(27, 1294)
 
 [sub_resource type="Curve2D" id="Curve2D_jjvhh"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 0, -541, 0, 0, 0, 0, 0, -530, 0, 0, 0, 0, 1061, -524, 0, 0, 0, 0, 1061, -416, 0, 0, 0, 0, -1058, -424, 0, 0, 0, 0, -1057, -310, 0, 0, 0, 0, 1061, -314, 0, 0, 0, 0, 1060, -223, 0, 0, 0, 0, -1058, -224, 0, 0, 0, 0, -1058, -95, 0, 0, 0, 0, 1061, -95)
+"points": PackedVector2Array(0, 0, 0, 0, 0, -541, 0, 0, 0, 0, 0, 415)
 }
-point_count = 11
+point_count = 2
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6bp64"]
+size = Vector2(119, 107)
 
 [node name="Main" type="Node2D"]
 
@@ -62,3 +66,10 @@ script = ExtResource("4_kry3j")
 position = Vector2(1.19209e-07, 0)
 rotation = -1.56264
 scale = Vector2(0.95814, 0.875792)
+
+[node name="killzone" parent="Path2D/PathFollow2D" instance=ExtResource("6_21xkr")]
+rotation = -1.5708
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D/PathFollow2D/killzone"]
+position = Vector2(6.5, 4.5)
+shape = SubResource("RectangleShape2D_6bp64")
