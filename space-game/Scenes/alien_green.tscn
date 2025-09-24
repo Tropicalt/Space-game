@@ -18,5 +18,6 @@ animations = [{
 }]
 
 [node name="Alien-Green" type="AnimatedSprite2D"]
+texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_eqmd1")
 autoplay = "default"

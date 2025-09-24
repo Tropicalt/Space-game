@@ -18,6 +18,7 @@ animations = [{
 }]
 
 [node name="Alien_Blue" type="AnimatedSprite2D"]
+texture_filter = 1
 position = Vector2(-7.7486e-07, 0.5)
 scale = Vector2(0.95814, 0.913953)
 sprite_frames = SubResource("SpriteFrames_5aror")

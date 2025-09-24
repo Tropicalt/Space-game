@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://hjvxl75sedhb"]
+
+[ext_resource type="Texture2D" uid="uid://c8gt1u4h22gh0" path="res://Sprites/pixilart-drawing.png" id="1_v7oki"]
+
+[node name="Bullet" type="Node2D"]
+
+[node name="Laser" type="Sprite2D" parent="."]
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="Pixilart-drawing" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(1, 11)
+texture = ExtResource("1_v7oki")

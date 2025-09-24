@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://c10ex502njx0" path="res://Scripts/SpaceShip.cs" id="2_yw7m7"]
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
+texture_filter = 1
 script = ExtResource("2_yw7m7")
 
 [node name="Space_Ship" type="Sprite2D" parent="."]

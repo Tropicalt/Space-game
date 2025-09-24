@@ -67,9 +67,11 @@ position = Vector2(1.19209e-07, 0)
 rotation = -1.56264
 scale = Vector2(0.95814, 0.875792)
 
-[node name="killzone" parent="Path2D/PathFollow2D" instance=ExtResource("6_21xkr")]
-rotation = -1.5708
+[node name="killzone" parent="Path2D/PathFollow2D/Alien_Blue" instance=ExtResource("6_21xkr")]
+rotation = -0.00892721
+scale = Vector2(1.0437, 1.14182)
+skew = 0.00146842
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D/PathFollow2D/killzone"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D/PathFollow2D/Alien_Blue/killzone"]
 position = Vector2(6.5, 4.5)
 shape = SubResource("RectangleShape2D_6bp64")
