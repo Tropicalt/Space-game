@@ -11,8 +11,23 @@ config_version=5
 [application]
 
 config/name="Space Game"
-config/features=PackedStringArray("4.4", "GL Compatibility")
+config/features=PackedStringArray("4.4", "C#", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+Globals="*res://Globals.cs"
+
+[dotnet]
+
+project/assembly_name="Space Game"
+
+[input]
+
+shoot={
+"deadzone": 0.2,
+"events": []
+}
 
 [rendering]
 
