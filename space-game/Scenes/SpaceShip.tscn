@@ -7,6 +7,7 @@
 script = ExtResource("2_yw7m7")
 
 [node name="Space_Ship" type="Sprite2D" parent="."]
+texture_filter = 1
 texture = ExtResource("1_cjnfv")
 region_enabled = true
 region_rect = Rect2(43, 28, 42, 28)

@@ -18,6 +18,7 @@ animations = [{
 }]
 
 [node name="Alien-Green" type="AnimatedSprite2D"]
+texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_k6sbs")
 autoplay = "default"
 frame_progress = 0.0524407
