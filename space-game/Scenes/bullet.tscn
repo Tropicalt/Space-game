@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://clev8xq2ij22r"]
 
-[ext_resource type="Texture2D" path="res://Sprites/pixilart-drawing.png" id="1_xjght"]
+[ext_resource type="Texture2D" uid="uid://dq34bo3vk0kse" path="res://Sprites/pixilart-drawing.png" id="1_xjght"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xjght"]
 size = Vector2(3, 21)

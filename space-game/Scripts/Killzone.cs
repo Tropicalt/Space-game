@@ -15,7 +15,7 @@ public partial class Killzone : Area2D
 	}
 	
 	public void OnBodyEntered(Node2D body) {
-		GD.Print("It works");
+		GD.Print("You Died");
 		var parent = GetParent() as Node2D;
 		parent.Visible=false;
 	}
