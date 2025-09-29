@@ -1,6 +1,6 @@
 using Godot;
 using System;
-using System.Security.Cryptography.X509Certificates;
+
 
 public partial class Menu : Control
 {
@@ -19,6 +19,7 @@ public partial class Menu : Control
 	
 	public void StartButtonPressed() {
 		GetTree().ChangeSceneToFile("res://Scenes/main.tscn");
+		GD.Print("pressed");
 	}
 	
 	public void ExitButtonPressed() {

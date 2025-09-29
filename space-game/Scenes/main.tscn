@@ -1,10 +1,9 @@
-[gd_scene load_steps=10 format=3 uid="uid://brximaih0jpaw"]
+[gd_scene load_steps=9 format=3 uid="uid://brximaih0jpaw"]
 
 [ext_resource type="Texture2D" uid="uid://cy4x1pm0wgkhv" path="res://Background/New_Space_Background.png" id="1_jjgbg"]
 [ext_resource type="PackedScene" uid="uid://cnuv7t5nsj5ml" path="res://Scenes/SpaceShip.tscn" id="2_bo1nx"]
 [ext_resource type="PackedScene" uid="uid://cf4ndjkm220xa" path="res://Scenes/alien_blue.tscn" id="3_8gbba"]
 [ext_resource type="Script" uid="uid://b8pjl6dn2usc5" path="res://Scripts/PathFollow2d.cs" id="4_kry3j"]
-[ext_resource type="PackedScene" uid="uid://clev8xq2ij22r" path="res://Scenes/Bullet.tscn" id="6_6bp64"]
 [ext_resource type="PackedScene" uid="uid://bql44nh7qdawf" path="res://Scenes/killzone.tscn" id="6_21xkr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bo1nx"]
@@ -63,6 +62,3 @@ rotation = -1.56396
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D/PathFollow2D/Alien_Blue/killzone"]
 position = Vector2(6.04086, 5.95883)
 shape = SubResource("RectangleShape2D_jjvhh")
-
-[node name="Bullet" parent="." instance=ExtResource("6_6bp64")]
-position = Vector2(14, 301)
